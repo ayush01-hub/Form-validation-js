@@ -1,0 +1,138 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    padding: 20px;
+}
+
+.form {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.form:hover {
+    transform: translateY(-10px);
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 30px;
+    color: #333;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    width: 60px;
+    height: 4px;
+    background: #4caf50;
+    display: block;
+    margin: 8px auto 0 auto;
+    border-radius: 5px;
+}
+
+.form-control {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.form-control label {
+    font-weight: 500;
+    color: #666;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.form-control input {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 12px;
+    width: 100%;
+    font-size: 14px;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+}
+
+.form-control input:focus {
+    border-color: #4caf50;
+    background: #fff;
+    outline: none;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+}
+
+#btn {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    font-weight: bold;
+}
+
+#btn:hover {
+    background: #45a049;
+}
+
+.form-control .error {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.clear-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #e74c3c;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 18px;
+    display: none;
+}
+
+.form-control input:not(:placeholder-shown) + .clear-btn {
+    display: block;
+}
+
+.clear-btn:hover {
+    background: #c0392b;
+}
