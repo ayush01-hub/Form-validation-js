@@ -2,7 +2,7 @@
 
 A simple form validation application that checks the validity of user inputs for a registration form. The project uses basic HTML, CSS, and JavaScript for client-side validation, ensuring that users input valid data before form submission.
 
-Reach out-[]
+Reach out-[https://ayush01-hub.github.io/Form-validation-js/]
 
 ## Features
 
